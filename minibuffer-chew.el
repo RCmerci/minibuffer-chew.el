@@ -36,6 +36,7 @@
 (defvar minibuffer-chew--check-timer nil
   "Timer to check minibuffer is unused or not")
 
+;;;###autoload
 (defun minibuffer-chew-start ()
   "Start minibuffer-chew loop, which will display message when it's unused"
   (interactive)
