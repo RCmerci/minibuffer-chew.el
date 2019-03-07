@@ -88,7 +88,6 @@
 				 (if (eq 'done (plist-get a :todo-type))
 				     (cons a r)
 				   r)) records :initial-value '())))
-    (message (format "%S" done-records))
     (if (> (random 100) 20)
 	(nth (random (length todo-records)) todo-records)
       (nth (random (length done-records)) done-records)
